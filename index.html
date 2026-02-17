@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 40px;
-            background-color: #f4f6f9;
+            background: linear-gradient(135deg, #eef2f7, #e6ecf5);
             color: #333;
         }
         .container {
@@ -17,8 +17,8 @@
             margin: 0 auto;
             background: white;
             padding: 35px;
-            border-radius: 12px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 14px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
         }
         .header {
             display: flex;
@@ -26,21 +26,24 @@
             gap: 25px;
             border-bottom: 3px solid #3498db;
             padding-bottom: 20px;
+            flex-wrap: wrap;
         }
         .photo {
-            width: 140px;
-            height: 140px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
             border: 4px solid #3498db;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
         }
         h1 {
             margin: 0;
             color: #2c3e50;
+            font-size: 32px;
         }
         h2 {
             border-bottom: 2px solid #3498db;
-            padding-bottom: 5px;
+            padding-bottom: 6px;
             color: #3498db;
             margin-top: 30px;
         }
@@ -49,23 +52,24 @@
             padding-left: 20px;
         }
         .info p {
-            margin: 4px 0;
+            margin: 5px 0;
+            font-size: 15px;
         }
         .section {
             margin-top: 25px;
         }
-        .two-columns {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
         .badge {
             background: #ecf5ff;
-            padding: 6px 10px;
-            border-radius: 6px;
+            padding: 7px 12px;
+            border-radius: 8px;
             display: inline-block;
-            margin: 4px;
+            margin: 5px 6px 5px 0;
             font-size: 14px;
+            font-weight: 500;
+        }
+        .sub {
+            color: #555;
+            font-size: 15px;
         }
     </style>
 </head>
@@ -74,18 +78,19 @@
 
 <div class="container">
 
-    <!-- ENCABEZADO CON FOTO -->
+    <!-- ENCABEZADO CON FOTO (FUNCIONA EN GITHUB SIN CARPETAS) -->
     <div class="header">
-        <!-- CAMBIA la ruta por tu foto -->
-        <img src="tu_foto.jpg" alt="Foto de Sebastián Suárez" class="photo">
-        
+        <!-- IMPORTANTE: La foto debe llamarse EXACTAMENTE tu_foto.jpg -->
+        <img src="tu_foto.jpg" alt="Foto de Sebastián Suárez" class="photo"
+             onerror="this.src='https://via.placeholder.com/150?text=Foto';">
+
         <div>
             <h1>Sebastián Suárez</h1>
             <div class="info">
                 <p><strong>Email:</strong> sebastyansuarezgarces@gmail.com</p>
                 <p><strong>Teléfono:</strong> +57 3229514573</p>
                 <p><strong>Ubicación:</strong> Colombia</p>
-                <p><strong>Perfil:</strong> Sistemas, Redes Sociales y Edición Digital</p>
+                <p><strong>Área:</strong> Sistemas, Tecnología y Marketing Digital</p>
             </div>
         </div>
     </div>
@@ -93,69 +98,69 @@
     <!-- PERFIL PROFESIONAL -->
     <div class="section">
         <h2>Perfil Profesional</h2>
-        <p>
-            Estudiante de Ingeniería en Sistemas con habilidades en tecnología, edición multimedia,
-            gestión de redes sociales y soporte informático. Me caracterizo por ser una persona
-            creativa, responsable y orientada a resultados, con experiencia en creación de contenido
-            digital, publicidad y manejo de comunidades online. Poseo conocimientos en programación,
-            sistemas informáticos y herramientas digitales modernas.
+        <p class="sub">
+            Estudiante de Ingeniería en Sistemas con enfoque en tecnología, desarrollo de software,
+            edición multimedia y gestión de redes sociales. Poseo habilidades en creación de contenido
+            digital, soporte tecnológico y manejo de herramientas informáticas modernas.
         </p>
-        <p>
-            Interesado en el área de desarrollo de software, marketing digital, tecnología y gestión
-            de proyectos tecnológicos. Capacidad para aprender rápidamente nuevas herramientas,
-            trabajar en equipo y adaptarme a entornos digitales y tecnológicos.
+        <p class="sub">
+            Me caracterizo por ser una persona responsable, creativa y con aprendizaje rápido,
+            interesada en el crecimiento profesional dentro del área tecnológica, desarrollo de software,
+            marketing digital y proyectos innovadores. Experiencia en proyectos académicos en Java,
+            manejo de sistemas informáticos y gestión de contenido digital para negocios.
         </p>
     </div>
 
-    <!-- HABILIDADES PRINCIPALES -->
+    <!-- HABILIDADES -->
     <div class="section">
         <h2>Habilidades Técnicas</h2>
         <div>
             <span class="badge">Edición de Video</span>
             <span class="badge">Redes Sociales</span>
             <span class="badge">Marketing Digital</span>
-            <span class="badge">Programación Básica</span>
+            <span class="badge">Programación en Java</span>
             <span class="badge">Diseño Digital</span>
-            <span class="badge">Sistemas Informáticos</span>
+            <span class="badge">Soporte Técnico</span>
+            <span class="badge">HTML y CSS</span>
+            <span class="badge">Ofimática</span>
         </div>
         <ul>
             <li>Edición de video (CapCut, Filmora, Premiere Pro)</li>
-            <li>Edición de imágenes (Canva, Photoshop básico)</li>
-            <li>Gestión de redes sociales (Instagram, Facebook, TikTok, YouTube)</li>
-            <li>Creación de contenido publicitario y reels</li>
+            <li>Edición de imágenes (Canva y Photoshop básico)</li>
+            <li>Gestión de redes sociales: Instagram, Facebook, TikTok y YouTube</li>
+            <li>Creación de contenido publicitario, reels y material visual</li>
             <li>Análisis de métricas y crecimiento orgánico</li>
-            <li>Diseño de publicaciones y contenido visual</li>
-            <li>Ofimática (Word, Excel, PowerPoint)</li>
-            <li>Manejo general de sistemas y tecnología</li>
+            <li>Manejo de herramientas ofimáticas (Word, Excel, PowerPoint)</li>
+            <li>Manejo general de sistemas operativos y tecnología</li>
             <li>Soporte técnico básico en equipos de cómputo</li>
         </ul>
     </div>
 
-    <!-- HABILIDADES EN SISTEMAS -->
+    <!-- CONOCIMIENTOS EN SISTEMAS -->
     <div class="section">
         <h2>Conocimientos en Sistemas y Tecnología</h2>
         <ul>
-            <li>Programación en Java (nivel académico)</li>
-            <li>Desarrollo de proyectos tecnológicos</li>
-            <li>Uso de entornos de desarrollo (Eclipse, Visual Studio)</li>
-            <li>Conceptos de bases de datos y SQL</li>
+            <li>Programación en Java (proyectos académicos)</li>
+            <li>Uso de Eclipse y entornos de desarrollo</li>
+            <li>Conceptos básicos de bases de datos y SQL</li>
             <li>Manejo de archivos JSON en proyectos</li>
-            <li>Conceptos básicos de desarrollo web (HTML y CSS)</li>
-            <li>Uso de herramientas digitales y software especializado</li>
+            <li>Desarrollo de proyectos tecnológicos académicos</li>
+            <li>Conceptos de desarrollo web (HTML, CSS)</li>
+            <li>Uso de GitHub y control de versiones</li>
         </ul>
     </div>
 
-    <!-- EXPERIENCIA LABORAL -->
+    <!-- EXPERIENCIA -->
     <div class="section">
         <h2>Experiencia Laboral</h2>
         <p><strong>Gestor de Redes Sociales y Publicidad Digital</strong></p>
-        <p><em>Eko Security – Publicidad para Tamales Doña Avi</em></p>
+        <p class="sub"><em>Eko Security – Publicidad para Tamales Doña Avi</em></p>
         <ul>
             <li>Creación y edición de contenido audiovisual para redes sociales.</li>
-            <li>Diseño de estrategias de crecimiento en plataformas digitales.</li>
+            <li>Diseño de estrategias de crecimiento digital.</li>
             <li>Gestión de publicaciones, historias y reels.</li>
-            <li>Atención a clientes por redes sociales y gestión de comunidad.</li>
-            <li>Análisis de estadísticas y mejora del alcance digital.</li>
+            <li>Atención a clientes y gestión de comunidad online.</li>
+            <li>Análisis de estadísticas y optimización del alcance.</li>
             <li>Diseño de piezas publicitarias y campañas promocionales.</li>
         </ul>
     </div>
@@ -163,22 +168,25 @@
     <!-- EDUCACIÓN -->
     <div class="section">
         <h2>Educación</h2>
-        <p><strong>Ingeniería en Sistemas (En formación)</strong></p>
-        <p>Formación académica orientada al desarrollo de software, bases de datos,
-        programación y tecnología.</p>
+        <p><strong>Ingeniería en Sistemas – En formación</strong></p>
+        <p class="sub">
+            Formación académica en programación, bases de datos, desarrollo de software
+            y tecnologías informáticas.
+        </p>
 
         <p><strong>Bachiller Académico</strong></p>
-        <p>Educación secundaria completa.</p>
+        <p class="sub">Educación secundaria completa.</p>
     </div>
 
     <!-- PROYECTOS -->
     <div class="section">
         <h2>Proyectos Destacados</h2>
         <ul>
-            <li>Desarrollo de proyectos en programación Java.</li>
+            <li>Desarrollo de proyectos en Java con manejo de archivos JSON.</li>
             <li>Creación de contenido digital para marcas y negocios.</li>
             <li>Gestión de campañas publicitarias en redes sociales.</li>
             <li>Edición de videos promocionales y contenido multimedia.</li>
+            <li>Uso de GitHub para publicación de proyectos web.</li>
         </ul>
     </div>
 
